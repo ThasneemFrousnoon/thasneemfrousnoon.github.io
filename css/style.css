@@ -45,15 +45,3 @@ img {
   gap: 30px;
   align-items: start;
 }
-
-.two-column-section .timeline-item,
-.two-column-section .info-block-w-icon {
-  width: 100%;
-}
-
-/* Stack into one column on smaller screens */
-@media (max-width: 768px) {
-  .two-column-section {
-    grid-template-columns: 1fr;
-  }
-}
