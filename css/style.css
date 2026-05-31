@@ -39,16 +39,21 @@ img {
     font-size: 20px !important;
 }*/
 
-.timeline-two-column {
+.two-column-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   align-items: start;
 }
 
-/* Makes it one column on phones */
+.two-column-section .timeline-item,
+.two-column-section .info-block-w-icon {
+  width: 100%;
+}
+
+/* Stack into one column on smaller screens */
 @media (max-width: 768px) {
-  .timeline-two-column {
+  .two-column-section {
     grid-template-columns: 1fr;
   }
 }
